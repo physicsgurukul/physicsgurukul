@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Sahib Dayal Ji Sulahkul Satsang Trust Gurukul for Physics-Services</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .font-big {
+          font-size: 20px;
+        }
+        .nav-li {
+          margin-left: 100px;
+        }
+        #logo {
+          height: 90px;
+        }
+        #container-main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        #class_links div{
+          float: left;
+        }
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img id="logo"src="Physics gurukul.jpg" alt="Gurukul logo">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Physics Gurukul</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item nav-li">
+                <a class="nav-link font-big" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-big nav-li" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-big active nav-li" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-big nav-li" href="about.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br><br><br>
+      <div id="container-main">
+        <div class="card" style="width: 18rem; width: 100%; height: 100%;">
+          <div class="card-body">
+            <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Services</h5>
+            <hr>
+            <p class="card-text font-big" style="display: flex; justify-content: center; align-items: center;">We provide online physics coaching from class 9 <sup>th</sup> to graduation.</p>
+            <label style="font-size: 21px;">Please click on the following links according to your needs:</label>
+            <div id="class_links">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Class 9 <sup>th</sup></h5>
+                  <button type="button" class="btn btn-outline-success" onclick="nine()">Click here &#8594</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Class 10 <sup>th</sup></h5>
+                  <button type="button" class="btn btn-outline-success" onclick="ten()">Click here &#8594</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Class 11 <sup>th</sup></h5>
+                  <button type="button" class="btn btn-outline-success" onclick="eleven()">Click here &#8594</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Class 12 <sup>th</sup></h5>
+                  <button type="button" class="btn btn-outline-success" onclick="twelve()">Click here &#8594</button>
+                </div>
+              </div>
+              <br>
+              <div class="card" style="width: 37rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Competative exams,graduation,miscellaneous needs</h5>
+                  <button type="button" class="btn btn-outline-success" onclick="others()">Click here &#8594</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+  function nine() {
+    window.open('https://forms.gle/HrN18TKAhfqxxbM37', '_blank')
+  }
+  function ten() {
+    window.open('https://forms.gle/pK8tR3zT39i8SZDZA', '_blank')
+  }
+  function eleven() {
+    window.open('https://forms.gle/oVDaFs2qCFEH2gyV8', '_blank')
+  }
+  function twelve() {
+    window.open('https://forms.gle/rszfv4oiU7sEY4u3A', '_blank')
+  }
+  function others() {
+    window.open('https://forms.gle/GexQwqb1v2AvUdfU8', '_blank')
+  }
+</script>
+</html>

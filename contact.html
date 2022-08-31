@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shri Sahib Dayal Ji Sulahkul Satsang Trust Gurukul for Physics-Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+    .font-big {
+      font-size: 20px;
+    }
+
+    .nav-li {
+      margin-left: 100px;
+    }
+    #logo {
+      height: 90px;
+    }
+    #ul_list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #heading-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #heading-main h2 {
+      color: orangered;
+      font-weight: lighter;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img id="logo"src="Physics gurukul.jpg" alt="Gurukul logo">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Physics Gurukul</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item nav-li">
+            <a class="nav-link font-big" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-big active nav-li" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-big nav-li" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-big nav-li" href="about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <div id="heading-main">
+  <h2>Contact Us:</h2>
+</div>
+<br><br>
+  <ul class="list-group" id="ul_list">
+    <li class="list-group-item">
+      Phone number:
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Show number
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><input id="number" value="+91 9560748330" disabled>
+          <br>
+        <button onclick="copynumber()">Copy number</button></li>
+        </ul>
+      </li>
+    </li>
+    <li class="list-group-item">
+      Email id:
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Show email id
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><input type="text" value="physicsgurukul5477@gmail.com" id="myInput" disabled>
+            <button onclick="myFunction()">Copy email</button>
+        </ul>
+      </li>
+    </li>
+  </ul>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+  function copynumber() {
+      /* Get the text field */
+  var copynumber = document.getElementById('number')
+
+/* Select the text field */
+copynumber.select();
+copynumber.setSelectionRange(0, 99999); /* For mobile devices */
+
+ /* Copy the text inside the text field */
+navigator.clipboard.writeText(copynumber.value);
+alert("Copied the phone number: "+copynumber.value);
+}
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+  
+  /* Alert the copied text */
+  alert("Copied the email id: " + copyText.value);
+}
+</script>
+</html>
